@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import UserContext from '../../UserContext';
 import './Header.css';
-import MenuIcon from '../../img/icon/menu.svg';
+import MenuIcon from '../../img/icon/menu.png';
 
 const Header = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="navbar">
-                    <Link className="navbar__logo" to="/">Fare Rider</Link>
+                    <Link className="navbar__logo" to="/">Urban Riders</Link>
                     <div className={`nav__box ${isMenuVisible ? "visible" : ""}`}>
                         <nav className="navbar__nav">
                             <Link className="navbar__link" to="/">Home</Link>

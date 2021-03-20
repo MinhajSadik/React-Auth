@@ -7,7 +7,6 @@ export const initLoginFramework = () => {
         firebase.initializeApp(firebaseConfig);
     }
 }
-// https://fir-auth-assignment-bf94d.firebaseapp.com/__/auth/handler
 
 export const googleSignIn = () => {
     const provider = new firebase.auth.GoogleAuthProvider();

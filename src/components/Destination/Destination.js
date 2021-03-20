@@ -48,7 +48,7 @@ const Destination = () => {
                                         <h2 className="destination__to">{pickTo}</h2>
                                     </div>
                                     {
-                                        currentTransport.seats.map((seat, ind) => <DestinationCard transport={currentTransport} key={ind} seat={seat} />)
+                                        currentTransport.seats.map((seat, pd) => <DestinationCard transport={currentTransport} key={pd} seat={seat} />)
                                     }
                                     <button className="btn btn__primary destination__btn" onClick={() => setSearchEnabled(true)}>Go back to search</button>
                                 </div>
