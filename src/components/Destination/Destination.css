@@ -1,0 +1,134 @@
+.destination__content {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-gap: 50px;
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.destination__content * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.destination__form,
+.destination__cards {
+    background: #EFEFEF;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.destination__form .input__group {
+    margin-bottom: 15px;
+}
+
+.destination__form .input__group label {
+    color: #4F4F4F;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.destination__form .input__group input {
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    outline: 0;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.destination__form .input__group input:focus {
+    border: 1px solid #000;
+}
+
+.destination__form .input__group .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.destination__form .btn {
+    width: 100%;
+    font-weight: 500;
+}
+
+.destination__map {
+    width: 100%;
+    height: 700px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.destination__location {
+    background: #4b00e0;
+    color: #fff;
+    padding: 25px 25px 25px 40px;
+    border-radius: 10px;
+}
+
+.destination__from {
+    margin-bottom: 20px;
+}
+
+.destination__from,
+.destination__to {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.destination__from::before,
+.destination__to::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.destination__from::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    top: 8px;
+    left: -20px;
+}
+
+.destination__btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1180px) {
+    .destination__content {
+        grid-gap: 30px;
+    }
+    .destination__map {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .destination__map {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .destination__content {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    .destination__map {
+        height: 90vw;
+        max-height: 600px;
+    }
+}

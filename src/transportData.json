@@ -1,0 +1,10 @@
+
+    [
+
+        {"name": "bike", "strID":1,"icon":"https://i.ibb.co/ts3GZB1/Frame.png", "fare":23},
+        {"name": "car", "strID":2,"icon":"https://i.ibb.co/g6596rw/Frame-2.png", "fare":23},
+        {"name": "bus", "strID":3,"icon":"https://i.ibb.co/ph0jJ41/Frame-1.png", "fare":23},
+        {"name": "train", "strID":4,"icon":"https://i.ibb.co/tHfL8cm/Group.png", "fare":23}
+
+    ]
+
