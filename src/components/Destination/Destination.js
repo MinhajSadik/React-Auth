@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import transportData from '../../transportData.json';
 import DestinationCard from '../DestinationCard/DestinationCard';
 import './Destination.css';

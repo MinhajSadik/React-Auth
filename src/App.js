@@ -3,13 +3,14 @@ import { UserProvider } from './UserContext';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import { useState } from 'react';
+// import { useState } from 'react-router';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import Destination from './components/Destination/Destination';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ComingSoon from './components/ComingSoon/ComingSoon';
 import Profile from './components/Profile/Profile';
+import { useState } from 'react';
 
 function App() {
   const [user, setUser] = useState({ isLoggedIn: false });

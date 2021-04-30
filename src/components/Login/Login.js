@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useHistory, useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router-dom';
 import UserContext from '../../UserContext';
 import './Login.css';
 import { emailLogin, emailSignUp, githubSignIn, googleSignIn, initLoginFramework } from './LoginManager';
